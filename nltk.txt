@@ -3,3 +3,4 @@ pros_cons
 reuters
 omw-1.4
 punkt
+averaged_perceptron_tagger
