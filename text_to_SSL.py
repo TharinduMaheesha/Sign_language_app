@@ -1,9 +1,9 @@
-
+import test
 import sys
-from nltk.tree import *
-from nltk.stem import WordNetLemmatizer
-from nltk.stem import PorterStemmer
-import nltk
+# from nltk.tree import *
+# from nltk.stem import WordNetLemmatizer
+# from nltk.stem import PorterStemmer
+# import nltk
 import re
 
 def parse_text(input_text):
@@ -80,8 +80,8 @@ def word_lemmatization(parsed_sent):
 
 
     # stop_words=set(stopwords.words("english"))
-    lemmatizer = WordNetLemmatizer()
-    ps = PorterStemmer()
+    lemmatizer = test.WordNetLemmatizer()
+    ps = test.PorterStemmer()
     lemmatized_words=[]
     for w in parsed_sent:
         w = ps.stem(w)
@@ -102,8 +102,8 @@ def word_tokenization(SSL_sentence):
 
     input_text=name
 
-    text = nltk.word_tokenize(input_text)
-    result=nltk.pos_tag(text)
+    text = test.word_tokenize(input_text)
+    result=test.pos_tag(text)
 
     return text
  
